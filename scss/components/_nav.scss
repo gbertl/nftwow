@@ -56,11 +56,31 @@
   }
 
   input[type='search'] {
+    display: none;
     margin-right: auto;
     background: #ffffff;
     border-radius: 8px;
     padding: 8px 12px;
     width: 448px;
+
+    @include mq(small) {
+      display: block;
+    }
+  }
+
+  &__links-wrapper {
+    display: none;
+    column-gap: 22px;
+    margin-right: 22px;
+
+    @include mq(small) {
+      display: flex;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    line-height: 1.188;
   }
 
   &__user {

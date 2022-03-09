@@ -1,5 +1,6 @@
 :root {
   --body-font: "Inter", sans-serif;
+  --body-color: #111111;
 }
 
 *,
@@ -39,8 +40,22 @@ input {
   color: #999999;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--body-color);
+}
+
 .container {
   margin: 0 32px;
+}
+@media (min-width: 414px) {
+  .container {
+    margin: 0 64px;
+  }
 }
 
 .nav {
@@ -92,11 +107,31 @@ input {
   }
 }
 .nav input[type=search] {
+  display: none;
   margin-right: auto;
   background: #ffffff;
   border-radius: 8px;
   padding: 8px 12px;
   width: 448px;
+}
+@media (min-width: 414px) {
+  .nav input[type=search] {
+    display: block;
+  }
+}
+.nav__links-wrapper {
+  display: none;
+  column-gap: 22px;
+  margin-right: 22px;
+}
+@media (min-width: 414px) {
+  .nav__links-wrapper {
+    display: flex;
+  }
+}
+.nav__link {
+  font-weight: 500;
+  line-height: 1.188;
 }
 .nav__user {
   position: relative;
