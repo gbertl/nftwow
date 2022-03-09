@@ -1,7 +1,67 @@
 .nav {
+  margin-top: 36px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__toggler {
+    width: 24px;
+    height: 19px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin-right: 24px;
+  }
+
+  &__icon-bar,
+  &__icon-bar::before,
+  &__icon-bar::after {
+    width: 100%;
+    height: 3px;
+    background-color: #111111;
+  }
+
   &__icon-bar {
-    width: 10px;
-    height: 10px;
-    background-color: red;
+    display: block;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__user {
+    position: relative;
+  }
+
+  &__red-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #ff4242;
+    border: 3px solid #eeeeee;
+    border-radius: 50%;
+    box-sizing: content-box;
+    transform: translate(3px, -3px);
   }
 }
