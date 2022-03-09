@@ -8,6 +8,9 @@
 
 body {
   background: #eeeeee;
+  font-size: 16px;
+  font-family: var(--body-font);
+  line-height: 1.5;
 }
 
 button {
@@ -18,4 +21,16 @@ button {
 img {
   max-width: 100%;
   display: block;
+}
+
+input {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  background: none;
+  border: none;
+  line-height: 1.5;
+}
+
+::placeholder {
+  color: #999999;
 }

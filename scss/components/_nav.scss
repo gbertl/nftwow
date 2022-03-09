@@ -14,6 +14,10 @@
     place-items: center;
     position: relative;
     margin-right: 24px;
+
+    @include mq(small) {
+      display: none;
+    }
   }
 
   &__icon-bar,
@@ -45,6 +49,18 @@
 
   &__logo {
     margin-right: auto;
+
+    @include mq(small) {
+      margin-right: 98px;
+    }
+  }
+
+  input[type='search'] {
+    margin-right: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 448px;
   }
 
   &__user {

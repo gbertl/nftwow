@@ -1,3 +1,7 @@
+:root {
+  --body-font: "Inter", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -8,6 +12,9 @@
 
 body {
   background: #eeeeee;
+  font-size: 16px;
+  font-family: var(--body-font);
+  line-height: 1.5;
 }
 
 button {
@@ -18,6 +25,18 @@ button {
 img {
   max-width: 100%;
   display: block;
+}
+
+input {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  background: none;
+  border: none;
+  line-height: 1.5;
+}
+
+::placeholder {
+  color: #999999;
 }
 
 .container {
@@ -40,6 +59,11 @@ img {
   position: relative;
   margin-right: 24px;
 }
+@media (min-width: 414px) {
+  .nav__toggler {
+    display: none;
+  }
+}
 .nav__icon-bar, .nav__icon-bar::before, .nav__icon-bar::after {
   width: 100%;
   height: 3px;
@@ -61,6 +85,18 @@ img {
 }
 .nav__logo {
   margin-right: auto;
+}
+@media (min-width: 414px) {
+  .nav__logo {
+    margin-right: 98px;
+  }
+}
+.nav input[type=search] {
+  margin-right: auto;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 448px;
 }
 .nav__user {
   position: relative;
