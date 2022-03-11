@@ -1,7 +1,7 @@
 .container {
   margin: 0 32px;
 
-  @include mq(small) {
+  @include mq(lg) {
     margin: 0 64px;
   }
 }
