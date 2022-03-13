@@ -8,14 +8,17 @@
 
 body {
   background: #eeeeee;
-  font-size: 16px;
+  font-size: var(--normal-font-size);
   font-family: var(--body-font);
   line-height: 1.5;
+  color: var(--body-color);
 }
 
 button {
   background: none;
   border: none;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 img {
@@ -41,5 +44,9 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--body-color);
+  color: var(--title-color);
+}
+
+h1 {
+  color: var(--title-color);
 }

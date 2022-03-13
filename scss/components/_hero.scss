@@ -1,0 +1,39 @@
+.hero {
+  margin-top: 80px;
+
+  &__intro {
+    max-width: 340px;
+    margin-bottom: 56px;
+  }
+
+  &__greet {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-bottom: 24px;
+  }
+
+  &__cta {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.208;
+    margin-bottom: 24px;
+  }
+
+  &__desc {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #cccccc;
+  }
+
+  hr:nth-of-type(1) {
+    margin-bottom: 2px;
+  }
+}
