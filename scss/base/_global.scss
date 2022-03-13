@@ -47,6 +47,18 @@ a {
   color: var(--title-color);
 }
 
-h1 {
+h1,
+h4 {
   color: var(--title-color);
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.208;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 1.188;
 }
