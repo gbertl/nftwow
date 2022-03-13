@@ -151,24 +151,8 @@
   }
 
   &__user {
-    position: relative;
-
     img {
       max-width: none;
     }
-  }
-
-  &__red-dot {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 8px;
-    height: 8px;
-    background: #ff4242;
-    border: 3px solid #eeeeee;
-    border-radius: 50%;
-    box-sizing: content-box;
-    transform: translate(3px, -3px);
   }
 }
