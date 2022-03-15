@@ -5,9 +5,17 @@
     position: relative;
   }
 
+  &__intro-wrapper {
+    position: relative;
+  }
+
   &__intro {
-    max-width: 340px;
-    margin-bottom: 56px;
+    max-width: 253px;
+    padding-bottom: 56px;
+
+    @include mq(md) {
+      max-width: 340px;
+    }
   }
 
   &__greet {
@@ -21,11 +29,116 @@
 
   &__cta {
     margin-bottom: 24px;
+
+    span:nth-of-type(1) {
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    span:nth-of-type(2) {
+      display: none;
+
+      @include mq(md) {
+        display: inline;
+      }
+    }
   }
 
   &__desc {
     font-size: 22px;
     margin-bottom: 32px;
+
+    span:nth-of-type(1) {
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    span:nth-of-type(2) {
+      display: none;
+
+      @include mq(md) {
+        display: inline;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    * {
+      flex-shrink: 0;
+    }
+  }
+
+  &__create-btn {
+    span:nth-of-type(1) {
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    span:nth-of-type(2) {
+      display: none;
+
+      @include mq(md) {
+        display: inline;
+      }
+    }
+  }
+
+  &__showcase-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: -32px;
+
+    @include mq(md) {
+      bottom: unset;
+      right: unset;
+      top: 0;
+      left: 50%;
+    }
+  }
+
+  &__showcase {
+    max-width: none;
+
+    @include mq(md) {
+      display: none;
+    }
+  }
+
+  &__showcase-desktop {
+    max-width: none;
+    display: none;
+
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 9px;
+    left: 48px;
+    z-index: -1;
+    background: #ff42ca;
+    filter: blur(210.458px);
+    opacity: 0.9;
+    border-radius: 50%;
+    width: 372px;
+    height: 244px;
+
+    @include mq(md) {
+      top: 68px;
+      left: 0;
+      width: 566px;
+      height: 371px;
+      filter: blur(320px);
+    }
   }
 
   hr {
@@ -57,12 +170,13 @@
 
   &__quote {
     max-width: 330px;
-  }
 
-  &__showcase {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: none;
+    @include mq(md) {
+      max-width: 232px;
+    }
+
+    @include mq(lg) {
+      max-width: 330px;
+    }
   }
 }

@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: #eeeeee;
   font-size: var(--normal-font-size);
@@ -19,6 +24,7 @@ button {
   border: none;
   font-family: inherit;
   font-size: inherit;
+  cursor: pointer;
 }
 
 img {
