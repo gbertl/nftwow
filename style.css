@@ -267,6 +267,9 @@ h4 {
 .hero {
   margin-top: 80px;
 }
+.hero__container {
+  position: relative;
+}
 .hero__intro {
   max-width: 340px;
   margin-bottom: 56px;
@@ -309,6 +312,12 @@ h4 {
 }
 .hero__quote {
   max-width: 330px;
+}
+.hero__showcase {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: none;
 }
 
 /*# sourceMappingURL=style.css.map */

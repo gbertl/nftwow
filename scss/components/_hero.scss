@@ -1,6 +1,10 @@
 .hero {
   margin-top: 80px;
 
+  &__container {
+    position: relative;
+  }
+
   &__intro {
     max-width: 340px;
     margin-bottom: 56px;
@@ -53,5 +57,12 @@
 
   &__quote {
     max-width: 330px;
+  }
+
+  &__showcase {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: none;
   }
 }
