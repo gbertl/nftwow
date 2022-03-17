@@ -61,6 +61,7 @@ a {
 }
 
 h1,
+h3,
 h4 {
   color: var(--title-color);
 }
@@ -69,6 +70,11 @@ h1 {
   font-weight: 400;
   font-size: 48px;
   line-height: 1.208;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 22px;
 }
 
 h4 {
@@ -89,18 +95,19 @@ h4 {
 .btn {
   font-weight: 500;
   line-height: 1.188;
-  padding: 12px;
+  padding: 10.5px 12px;
   background: var(--btn-bg);
   border-radius: 8px;
   color: var(--title-color);
 }
-
-.primary-btn {
+.btn-primary {
   --btn-bg: #42ffd2;
 }
-
-.light-btn {
+.btn-secondary {
   --btn-bg: #ffffff;
+}
+.btn-light {
+  --btn-bg: #eeeeee;
 }
 
 .mr-16 {
@@ -436,6 +443,29 @@ h4 {
   .hero__quote {
     max-width: 330px;
   }
+}
+
+.intro__card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  gap: 32px;
+}
+.intro__card > img {
+  align-self: center;
+}
+.intro__card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.intro__card-body img {
+  width: 32px;
+  height: 32px;
+}
+.intro__card-body button {
+  align-self: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */

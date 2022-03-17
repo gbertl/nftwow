@@ -1,0 +1,28 @@
+.intro {
+  &__card {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    gap: 32px;
+
+    > img {
+      align-self: center;
+    }
+  }
+
+  &__card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    button {
+      align-self: flex-start;
+    }
+  }
+}

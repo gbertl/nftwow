@@ -10,18 +10,22 @@
 .btn {
   font-weight: 500;
   line-height: 1.188;
-  padding: 12px;
+  padding: 10.5px 12px;
   background: var(--btn-bg);
   border-radius: 8px;
   color: var(--title-color);
-}
 
-.primary-btn {
-  --btn-bg: #42ffd2;
-}
+  &-primary {
+    --btn-bg: #42ffd2;
+  }
 
-.light-btn {
-  --btn-bg: #ffffff;
+  &-secondary {
+    --btn-bg: #ffffff;
+  }
+
+  &-light {
+    --btn-bg: #eeeeee;
+  }
 }
 
 .mr-16 {
