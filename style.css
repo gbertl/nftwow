@@ -452,6 +452,9 @@ h4 {
   }
 }
 
+.intro {
+  padding-bottom: 24px;
+}
 .intro__cards-wrapper {
   display: grid;
   grid-template-columns: 1fr;
