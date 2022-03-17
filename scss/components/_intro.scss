@@ -1,13 +1,26 @@
 .intro {
+  &__cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    @include mq(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   &__card {
     background-color: #ffffff;
     padding: 32px;
     border-radius: 8px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 
     > img {
       align-self: center;
+      justify-self: center;
+      flex-shrink: 0;
     }
   }
 

@@ -68,10 +68,6 @@
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
-
-    * {
-      flex-shrink: 0;
-    }
   }
 
   &__create-btn {
@@ -99,7 +95,7 @@
       bottom: unset;
       right: unset;
       top: 0;
-      left: 50%;
+      left: calc(50% + 12px);
     }
   }
 

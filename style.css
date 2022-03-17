@@ -343,9 +343,6 @@ h4 {
   gap: 16px;
   flex-wrap: wrap;
 }
-.hero__buttons * {
-  flex-shrink: 0;
-}
 @media (min-width: 768px) {
   .hero__create-btn span:nth-of-type(1) {
     display: none;
@@ -369,7 +366,7 @@ h4 {
     bottom: unset;
     right: unset;
     top: 0;
-    left: 50%;
+    left: calc(50% + 12px);
   }
 }
 .hero__showcase {
@@ -445,15 +442,28 @@ h4 {
   }
 }
 
+.intro__cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  .intro__cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .intro__card {
   background-color: #ffffff;
   padding: 32px;
   border-radius: 8px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 .intro__card > img {
   align-self: center;
+  justify-self: center;
+  flex-shrink: 0;
 }
 .intro__card-body {
   display: flex;
