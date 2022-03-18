@@ -55,3 +55,21 @@
     transform: translate(3px, -3px);
   }
 }
+
+.section-margin {
+  margin-bottom: 32px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  button {
+    align-self: center;
+  }
+}

@@ -1,0 +1,39 @@
+.intro-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.intro-card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__button {
+    align-self: flex-start;
+  }
+
+  &__img {
+    align-self: center;
+    justify-self: center;
+    flex-shrink: 0;
+  }
+}
