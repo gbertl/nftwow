@@ -505,13 +505,21 @@ h4 {
   }
 }
 
-.intro-card--upcoming-1 {
-  background: #ffd8e6;
+.intro-card-upcoming {
+  background: var(--bg-color);
 }
-.intro-card--upcoming-1 .intro-card__button {
-  color: #ff005c;
-  border: 1px solid #ff005c;
+.intro-card-upcoming .intro-card__button {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
   background: none;
+}
+.intro-card-upcoming--1 {
+  --bg-color: #ffd8e6;
+  --text-color: #ff005c;
+}
+.intro-card-upcoming--2 {
+  --bg-color: #f2d8ff;
+  --text-color: #aa00ff;
 }
 
 /*# sourceMappingURL=style.css.map */
