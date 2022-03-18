@@ -61,7 +61,7 @@ a {
 }
 
 h1,
-h3,
+h2,
 h4 {
   color: var(--title-color);
 }
@@ -72,7 +72,7 @@ h1 {
   line-height: 1.208;
 }
 
-h3 {
+h2 {
   font-weight: 500;
   font-size: 22px;
 }
