@@ -34,6 +34,7 @@
 
 .notif-dot {
   position: relative;
+  display: inline-block;
 
   &::after {
     content: '';
@@ -48,11 +49,21 @@
     transform: translate(30%, -30%);
   }
 
-  &-outline::after {
+  &--outline::after {
     width: 8px;
     height: 8px;
     border: 3px solid #eeeeee;
     transform: translate(3px, -3px);
+  }
+
+  &--check::after {
+    width: 16px;
+    height: 16px;
+    transform: translate(0, 0);
+    background-image: url('images/trending/check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #42ffd2;
   }
 }
 
