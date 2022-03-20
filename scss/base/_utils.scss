@@ -60,7 +60,7 @@
     width: 16px;
     height: 16px;
     transform: translate(0, 0);
-    background-image: url('images/trending/check.svg');
+    background-image: url('images/check.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-color: #42ffd2;
@@ -72,15 +72,20 @@
 }
 
 .section-heading {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
   margin-bottom: 32px;
+  column-gap: 24px;
+  row-gap: 16px;
 
-  h2 {
-    margin-bottom: 16px;
+  p {
+    grid-row: 2;
   }
 
   button {
+    justify-self: flex-end;
     align-self: center;
+    grid-row: span 2;
   }
 }
