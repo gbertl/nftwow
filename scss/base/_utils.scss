@@ -89,3 +89,8 @@
     grid-row: span 2;
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+}

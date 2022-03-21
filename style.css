@@ -167,6 +167,11 @@ h4 {
   grid-row: span 2;
 }
 
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+
 .intro-cards-wrapper {
   display: grid;
   grid-template-columns: 1fr;

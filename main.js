@@ -5,6 +5,7 @@ const toggleMenu = () => {
   btn.addEventListener('click', () => {
     btn.classList.toggle('nav__toggler--active');
     menu.classList.toggle('nav__menu--open');
+    document.body.classList.toggle('no-scroll');
   });
 
   // clicking outside closes it
@@ -12,6 +13,7 @@ const toggleMenu = () => {
     if (!e.target.closest('.nav__menu') && !e.target.closest('.nav__toggler')) {
       btn.classList.remove('nav__toggler--active');
       menu.classList.remove('nav__menu--open');
+      document.body.classList.remove('no-scroll');
     }
   });
 };
