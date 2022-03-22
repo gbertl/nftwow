@@ -437,6 +437,7 @@ h4 {
   display: flex;
   justify-content: flex-end;
   pointer-events: none;
+  z-index: -1;
 }
 @media (min-width: 768px) {
   .hero__showcase-wrapper {
@@ -505,6 +506,9 @@ h4 {
 .hero__testimonial {
   display: flex;
   column-gap: 24px;
+}
+.hero__testimonial img {
+  align-self: flex-end;
 }
 .hero__name {
   margin-bottom: 12px;
