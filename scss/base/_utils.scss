@@ -16,7 +16,7 @@
   color: var(--title-color);
 
   &-primary {
-    --btn-bg: #42ffd2;
+    --btn-bg: var(--primary-color);
   }
 
   &-secondary {
@@ -63,7 +63,7 @@
     background-image: url('images/check.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #42ffd2;
+    background-color: var(--primary-color);
   }
 }
 
