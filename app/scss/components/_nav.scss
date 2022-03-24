@@ -49,13 +49,13 @@
     transform: translateY(calc(100% + 5px));
   }
 
-  &__toggler--active &__icon-bar::before {
-    transform: rotate(45deg) translate(10px, -10px);
-  }
-
   &__toggler--active &__icon-bar {
     transform: translateX(-15px);
     background: transparent;
+  }
+
+  &__toggler--active &__icon-bar::before {
+    transform: rotate(45deg) translate(10px, -10px);
   }
 
   &__toggler--active &__icon-bar::after {

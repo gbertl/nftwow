@@ -1,0 +1,19 @@
+{
+  "name": "nftwow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gilbertlc/nftwowlanding.git",
+  "author": "gilbertlc <gilbert.lacasandile@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "browser-sync": "^2.27.9",
+    "cssnano": "^5.1.5",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.12",
+    "sass": "^1.49.9"
+  }
+}

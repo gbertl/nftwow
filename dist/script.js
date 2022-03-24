@@ -1,0 +1,2 @@
+const toggleMenu=()=>{const e=document.querySelector(".nav__toggler"),t=document.querySelector(".nav__menu");e.addEventListener("click",(()=>{e.classList.toggle("nav__toggler--active"),t.classList.toggle("nav__menu--open"),document.body.classList.toggle("no-scroll")})),window.addEventListener("click",(o=>{o.target.closest(".nav__menu")||o.target.closest(".nav__toggler")||(e.classList.remove("nav__toggler--active"),t.classList.remove("nav__menu--open"),document.body.classList.remove("no-scroll"))}))};toggleMenu();
+//# sourceMappingURL=script.js.map
