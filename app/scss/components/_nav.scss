@@ -18,48 +18,41 @@
     @include mq(lg) {
       display: none;
     }
-  }
 
-  &__icon-bar {
-    display: block;
-    transition: 500ms;
-  }
+    span {
+      display: block;
+      width: 24px;
+      height: 3px;
+      background: #111111;
+      transition: 500ms;
+    }
 
-  &__icon-bar::before,
-  &__icon-bar::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    transition: 500ms;
-  }
+    span:nth-child(1),
+    span:nth-child(3) {
+      position: absolute;
+      left: 0;
+    }
 
-  &__icon-bar,
-  &__icon-bar::before,
-  &__icon-bar::after {
-    width: 24px;
-    height: 3px;
-    background: #111111;
-  }
+    span:nth-child(1) {
+      transform: translateY(calc(-100% + -5px));
+    }
 
-  &__icon-bar::before {
-    transform: translateY(calc(-100% + -5px));
-  }
+    span:nth-child(3) {
+      transform: translateY(calc(100% + 5px));
+    }
 
-  &__icon-bar::after {
-    transform: translateY(calc(100% + 5px));
-  }
+    &--active span:nth-child(1) {
+      transform: rotate(45deg);
+    }
 
-  &__toggler--active &__icon-bar {
-    transform: translateX(-15px);
-    background: transparent;
-  }
+    &--active span:nth-child(2) {
+      transform: translateX(-15px);
+      background: transparent;
+    }
 
-  &__toggler--active &__icon-bar::before {
-    transform: rotate(45deg) translate(10px, -10px);
-  }
-
-  &__toggler--active &__icon-bar::after {
-    transform: rotate(-45deg) translate(10px, 10px);
+    &--active span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
   }
 
   &__logo {
