@@ -7,7 +7,15 @@
     }
 
     &:nth-child(2) {
+      --bg-color: #d8ecff;
+    }
+
+    &:nth-child(3) {
       --bg-color: #ffd8eb;
+    }
+
+    &:nth-child(4) {
+      --bg-color: #fff4d8;
     }
   }
 
