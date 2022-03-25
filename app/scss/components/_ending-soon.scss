@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 32px;
+
+    @include mq(md) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 24px;
+    }
   }
 
   &__card {
@@ -62,7 +67,7 @@
       }
     }
 
-    &--2 {
+    &--3 {
       background: rgba(22, 22, 22, 0.64);
 
       span:nth-child(2),

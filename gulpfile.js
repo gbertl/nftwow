@@ -1,10 +1,15 @@
-const { src, dest, watch, series } = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const postcss = require('gulp-postcss');
-const cssnano = require('cssnano');
-const autoprefixer = require('autoprefixer');
-const terser = require('gulp-terser');
-const browserSync = require('browser-sync').create();
+import pkg from 'gulp';
+const { src, dest, watch, series } = pkg;
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
+import postcss from 'gulp-postcss';
+import cssnano from 'cssnano';
+import autoprefixer from 'autoprefixer';
+import terser from 'gulp-terser';
+import imagemin from 'gulp-imagemin';
+import browserSync from 'browser-sync';
+const bs = browserSync.create();
 
 const styles = () => {
   return src('app/scss/style.scss', { sourcemaps: true })
@@ -19,8 +24,12 @@ const scripts = () => {
     .pipe(dest('dist', { sourcemaps: '.' }));
 };
 
+const images = () => {
+  return src('img/**/*').pipe(imagemin()).pipe(dest('dist/img'));
+};
+
 const serve = (cb) => {
-  browserSync.init({
+  bs.init({
     server: {
       baseDir: './',
     },
@@ -30,7 +39,7 @@ const serve = (cb) => {
 };
 
 const reload = (cb) => {
-  browserSync.reload();
+  bs.reload();
   cb();
 };
 
@@ -40,6 +49,7 @@ const watchAll = () => {
     ['app/scss/**/*.scss', 'app/js/**/*.js'],
     series(styles, scripts, reload)
   );
+  watch('img/**/*', series(images, reload));
 };
 
-exports.default = series(styles, scripts, serve, watchAll);
+export default series(styles, scripts, images, serve, watchAll);
