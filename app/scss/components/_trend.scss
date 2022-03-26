@@ -5,7 +5,7 @@
     align-items: flex-start;
     gap: 24px;
 
-    @include mq(md) {
+    @include mq(lg) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
