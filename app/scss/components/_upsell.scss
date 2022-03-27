@@ -1,0 +1,58 @@
+.upsell {
+  &__container {
+    position: relative;
+  }
+
+  .hero {
+    &__showcase-wrapper {
+      left: 75%;
+      display: block;
+      width: auto;
+
+      @include mq(sm) {
+        left: 50%;
+      }
+
+      @include mq(lg) {
+        left: 35%;
+      }
+
+      @include mq(xxl) {
+        left: unset;
+        right: 0;
+      }
+    }
+
+    &__intro {
+      max-width: none;
+
+      @include mq(md) {
+        max-width: 340px;
+      }
+    }
+
+    &__cta {
+      max-width: 253px;
+
+      @include mq(md) {
+        max-width: 340px;
+      }
+    }
+
+    &__desc {
+      span:nth-of-type(1) {
+        @include mq(md) {
+          display: block;
+        }
+      }
+    }
+
+    &__create-btn {
+      span:nth-of-type(1) {
+        @include mq(md) {
+          display: block;
+        }
+      }
+    }
+  }
+}

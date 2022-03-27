@@ -103,10 +103,6 @@
 
   &__showcase {
     max-width: none;
-
-    @include mq(md) {
-      display: none;
-    }
   }
 
   &__showcase-desktop-wrapper {
