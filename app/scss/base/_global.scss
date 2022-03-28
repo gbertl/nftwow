@@ -55,7 +55,9 @@ a {
 
 h1,
 h2,
-h4 {
+h4,
+h6 {
+  font-weight: 500;
   color: var(--title-color);
 }
 
@@ -66,13 +68,16 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
   font-size: 22px;
 }
 
 h4 {
-  font-weight: 500;
   line-height: 1.188;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 1.25;
 }
 
 .hr {

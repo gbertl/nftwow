@@ -66,6 +66,10 @@
 
 .section-margin {
   margin-bottom: 32px;
+
+  @include mq(md) {
+    margin-bottom: 56px;
+  }
 }
 
 .section-heading {
