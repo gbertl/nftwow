@@ -1,0 +1,18 @@
+.press {
+  display: none;
+
+  @include mq(lg) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 70px 0;
+  }
+
+  .hr:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+}
