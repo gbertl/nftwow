@@ -75,13 +75,14 @@
     width: 90%;
     max-width: 250px;
     height: 100%;
-    padding: 6rem 32px 0;
+    padding: 100px 32px 0;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
     transform: translateX(-100%);
     transition: 500ms;
     z-index: 9998;
+    gap: 24px;
 
     &--open {
       transform: translateX(0);
