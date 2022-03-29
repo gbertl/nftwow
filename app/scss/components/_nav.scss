@@ -123,6 +123,8 @@
     @include mq(lg) {
       flex-direction: row;
       justify-content: flex-end;
+      gap: 22px;
+      margin-right: 22px;
     }
   }
 
@@ -131,6 +133,7 @@
     line-height: 1.188;
     display: block;
     padding: 22px;
+    position: relative;
 
     &:hover {
       background: #eeeeee;
@@ -138,11 +141,30 @@
     }
 
     @include mq(lg) {
-      padding: 0 22px 0 0;
+      padding: 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: currentColor;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 500ms;
+      }
 
       &:hover {
         background: none;
-        color: gray;
+        border-radius: 0;
+
+        &::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
       }
     }
   }
