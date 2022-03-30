@@ -80,7 +80,7 @@
     top: 0;
     right: 0;
     transform: translate(30%, -30%);
-    z-index: 9999;
+    z-index: 1;
   }
 
   &--outline::after {
@@ -128,5 +128,5 @@
 
 .no-scroll {
   overflow: hidden;
-  position: fixed;
+  height: 100vh;
 }
