@@ -18,6 +18,10 @@
       referrerpolicy="no-referrer"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="dist/style.css" />
     <title>NFTwow</title>
   </head>
@@ -442,61 +446,71 @@
           <button class="btn btn-secondary">Explore</button>
         </div>
 
-        <div class="nft-cards-wrapper">
-          <div class="nft-card nft-card--ending-soon">
-            <img src="dist/img/ending-soon/showcase-1.jpg" alt="Showcase 1" />
-            <div class="nft-card__desc">
-              <span>Flowitars</span>
-              <span>Top Bid</span>
-              <span>Floppy</span>
-              <span class="trend__price"
-                ><img src="dist/img/trend/diamond.svg" alt="Diamond" />
-                2.99 ETH
-              </span>
-              <span>#12</span>
-              <span>1 day left</span>
+        <div class="swiper mySwiper">
+          <div class="nft-cards-wrapper swiper-wrapper">
+            <div
+              class="nft-card swiper-slide nft-card--ending nft-card--ending-1"
+            >
+              <img src="dist/img/ending-soon/showcase-1.jpg" alt="Showcase 1" />
+              <div class="nft-card__desc">
+                <span>Flowitars</span>
+                <span>Top Bid</span>
+                <span>Floppy</span>
+                <span class="trend__price"
+                  ><img src="dist/img/trend/diamond.svg" alt="Diamond" />
+                  2.99 ETH
+                </span>
+                <span>#12</span>
+                <span>1 day left</span>
+              </div>
             </div>
-          </div>
-          <div class="nft-card nft-card--ending-soon">
-            <img src="dist/img/ending-soon/showcase-2.jpg" alt="Showcase 2" />
-            <div class="nft-card__desc">
-              <span>Anna Kuife</span>
-              <span>Top Bid</span>
-              <span>Merlge</span>
-              <span class="trend__price"
-                ><img src="dist/img/trend/diamond.svg" alt="Diamond" />
-                1.23 ETH
-              </span>
-              <span>#8745</span>
-              <span>2 days left</span>
+            <div
+              class="nft-card swiper-slide nft-card--ending nft-card--ending-2"
+            >
+              <img src="dist/img/ending-soon/showcase-2.jpg" alt="Showcase 2" />
+              <div class="nft-card__desc">
+                <span>Anna Kuife</span>
+                <span>Top Bid</span>
+                <span>Merlge</span>
+                <span class="trend__price"
+                  ><img src="dist/img/trend/diamond.svg" alt="Diamond" />
+                  1.23 ETH
+                </span>
+                <span>#8745</span>
+                <span>2 days left</span>
+              </div>
             </div>
-          </div>
-          <div class="nft-card nft-card--ending-soon">
-            <img src="dist/img/ending-soon/showcase-3.jpg" alt="Showcase 3" />
-            <div class="nft-card__desc">
-              <span>Musikc</span>
-              <span>Top Bid</span>
-              <span>Starr Eyes</span>
-              <span class="trend__price"
-                ><img src="dist/img/trend/diamond.svg" alt="Diamond" />
-                0.71 ETH
-              </span>
-              <span>#192</span>
-              <span>3 day left</span>
+            <div
+              class="nft-card swiper-slide nft-card--ending nft-card--ending-3"
+            >
+              <img src="dist/img/ending-soon/showcase-3.jpg" alt="Showcase 3" />
+              <div class="nft-card__desc">
+                <span>Musikc</span>
+                <span>Top Bid</span>
+                <span>Starr Eyes</span>
+                <span class="trend__price"
+                  ><img src="dist/img/trend/diamond.svg" alt="Diamond" />
+                  0.71 ETH
+                </span>
+                <span>#192</span>
+                <span>3 day left</span>
+              </div>
             </div>
-          </div>
-          <div class="nft-card nft-card--ending-soon">
-            <img src="dist/img/ending-soon/showcase-4.jpg" alt="Showcase 4" />
-            <div class="nft-card__desc">
-              <span>BLOODFLOW</span>
-              <span>Top Bid</span>
-              <span>H e l p</span>
-              <span class="trend__price"
-                ><img src="dist/img/trend/diamond.svg" alt="Diamond" />
-                5.90 ETH
-              </span>
-              <span>#54</span>
-              <span>5 days left</span>
+            <div
+              class="nft-card swiper-slide nft-card--ending nft-card--ending-4"
+            >
+              <img src="dist/img/ending-soon/showcase-4.jpg" alt="Showcase 4" />
+              <div class="nft-card__desc">
+                <span>BLOODFLOW</span>
+                <span>Top Bid</span>
+                <span>H e l p</span>
+                <span class="trend__price"
+                  ><img src="dist/img/trend/diamond.svg" alt="Diamond" />
+                  5.90 ETH
+                </span>
+                <span>#54</span>
+                <span>5 days left</span>
+              </div>
             </div>
           </div>
         </div>
@@ -587,42 +601,52 @@
           <button class="btn btn-secondary">Visit Learn</button>
         </div>
 
-        <div class="nft-cards-wrapper">
-          <div class="nft-card nft-card--learn">
-            <img src="dist/img/learn/showcase-1.png" alt="Showcase 1" />
-            <div class="nft-card__desc">
-              <span>Learn</span>
-              <span
-                >New to NFTs? Start here and learn the basics before
-                investing.</span
-              >
+        <div class="swiper mySwiper2">
+          <div class="nft-cards-wrapper swiper-wrapper">
+            <div
+              class="nft-card swiper-slide nft-card--learn nft-card--learn-1"
+            >
+              <img src="dist/img/learn/showcase-1.png" alt="Showcase 1" />
+              <div class="nft-card__desc">
+                <span>Learn</span>
+                <span
+                  >New to NFTs? Start here and learn the basics before
+                  investing.</span
+                >
+              </div>
             </div>
-          </div>
-          <div class="nft-card nft-card--learn">
-            <img src="dist/img/learn/showcase-2.png" alt="Showcase 2" />
-            <div class="nft-card__desc">
-              <span>Learn</span>
-              <span>Learn how to top up your wallet on NFTwow.</span>
+            <div
+              class="nft-card swiper-slide nft-card--learn nft-card--learn-2"
+            >
+              <img src="dist/img/learn/showcase-2.png" alt="Showcase 2" />
+              <div class="nft-card__desc">
+                <span>Learn</span>
+                <span>Learn how to top up your wallet on NFTwow.</span>
+              </div>
             </div>
-          </div>
-          <div class="nft-card nft-card--learn">
-            <img src="dist/img/learn/showcase-3.png" alt="Showcase 3" />
-            <div class="nft-card__desc">
-              <span>Learn</span>
-              <span
-                >Earn rewards by completing this course, and unlock free
-                crypto.</span
-              >
+            <div
+              class="nft-card swiper-slide nft-card--learn nft-card--learn-3"
+            >
+              <img src="dist/img/learn/showcase-3.png" alt="Showcase 3" />
+              <div class="nft-card__desc">
+                <span>Learn</span>
+                <span
+                  >Earn rewards by completing this course, and unlock free
+                  crypto.</span
+                >
+              </div>
             </div>
-          </div>
-          <div class="nft-card nft-card--learn">
-            <img src="dist/img/learn/showcase-4.png" alt="Showcase 4" />
-            <div class="nft-card__desc">
-              <span>Learn</span>
-              <span
-                >What’s the diference between an image and an NFT? We explain
-                all.</span
-              >
+            <div
+              class="nft-card swiper-slide nft-card--learn nft-card--learn-4"
+            >
+              <img src="dist/img/learn/showcase-4.png" alt="Showcase 4" />
+              <div class="nft-card__desc">
+                <span>Learn</span>
+                <span
+                  >What’s the diference between an image and an NFT? We explain
+                  all.</span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -750,6 +774,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="dist/script.js"></script>
   </body>

@@ -1,18 +1,13 @@
 .nft-cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  row-gap: 32px;
-  column-gap: 24px;
+  display: flex;
 }
 
 .nft-card {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-
-  > img {
-    width: 100%;
-  }
+  width: max-content;
+  user-select: none;
 
   &__desc {
     background: var(--bg-color);
@@ -33,31 +28,31 @@
     }
   }
 
-  &--ending-soon {
-    &:nth-child(1) {
+  &--ending {
+    &-1 {
       --bg-color: rgba(227, 227, 220, 0.64);
     }
 
-    &:nth-child(2) {
+    &-2 {
       --bg-color: rgba(143, 1, 0, 0.64);
     }
 
-    &:nth-child(3) {
+    &-3 {
       --bg-color: rgba(22, 22, 22, 0.64);
     }
 
-    &:nth-child(4) {
+    &-4 {
       --bg-color: rgba(1, 227, 225, 0.64);
     }
 
-    &:nth-child(2),
-    &:nth-child(3) {
+    &-2,
+    &-3 {
       --text-color-1: #ffffff;
       --text-color-2: #cccccc;
     }
 
-    &:nth-child(1),
-    &:nth-child(4) {
+    &-1,
+    &-4 {
       --text-color-1: #111111;
       --text-color-2: #777777;
     }
@@ -99,19 +94,19 @@
   }
 
   &--learn {
-    &:nth-child(1) {
+    &-1 {
       --bg-color: rgba(184, 141, 208, 0.64);
     }
 
-    &:nth-child(2) {
+    &-2 {
       --bg-color: rgba(222, 200, 163, 0.64);
     }
 
-    &:nth-child(3) {
+    &-3 {
       --bg-color: rgba(122, 181, 161, 0.64);
     }
 
-    &:nth-child(4) {
+    &-4 {
       --bg-color: rgba(51, 113, 198, 0.64);
     }
 

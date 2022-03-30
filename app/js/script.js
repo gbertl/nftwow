@@ -19,3 +19,15 @@ const toggleMenu = () => {
 };
 
 toggleMenu();
+
+var swiper = new Swiper('.mySwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 24,
+  loop: true,
+});
+
+var swiper2 = new Swiper('.mySwiper2', {
+  slidesPerView: 'auto',
+  spaceBetween: 24,
+  loop: true,
+});
