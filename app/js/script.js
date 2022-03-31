@@ -20,14 +20,23 @@ const toggleMenu = () => {
 
 toggleMenu();
 
-var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 'auto',
+const mySwiperConfig = {
+  slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
-});
+  loopedSlides: 4,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+};
 
-var swiper2 = new Swiper('.mySwiper2', {
-  slidesPerView: 'auto',
-  spaceBetween: 24,
-  loop: true,
-});
+const swiper = new Swiper('.mySwiper', mySwiperConfig);
+const swiper2 = new Swiper('.mySwiper2', mySwiperConfig);
