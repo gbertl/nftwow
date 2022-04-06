@@ -11,20 +11,20 @@ import imagemin from 'gulp-imagemin';
 import browserSync from 'browser-sync';
 const bs = browserSync.create();
 
-const styles = () => {
+export const styles = () => {
   return src('app/scss/style.scss', { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest('dist', { sourcemaps: '.' }));
 };
 
-const scripts = () => {
+export const scripts = () => {
   return src('app/js/script.js', { sourcemaps: true })
     .pipe(terser())
     .pipe(dest('dist', { sourcemaps: '.' }));
 };
 
-const images = () => {
+export const images = () => {
   return src('img/**/*').pipe(imagemin()).pipe(dest('dist/img'));
 };
 
