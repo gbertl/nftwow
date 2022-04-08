@@ -38,17 +38,17 @@
 
   &--primary {
     --btn-bg: var(--primary-color);
-    --btn-bg-hover: #3be5bd;
+    --btn-bg-hover: var(--primary-hover-color);
   }
 
   &--secondary {
-    --btn-bg: #ffffff;
-    --btn-bg-hover: #dedddd;
+    --btn-bg: var(--secondary-color);
+    --btn-bg-hover: var(--secondary-hover-color);
   }
 
   &--light {
-    --btn-bg: #eeeeee;
-    --btn-bg-hover: #d4d1d1;
+    --btn-bg: var(--light-color);
+    --btn-bg-hover: var(--light-hover-color);
   }
 
   &--outline {

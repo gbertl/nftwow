@@ -3,5 +3,10 @@
   --body-color: #555555;
   --title-color: #111111;
   --normal-font-size: 16px;
-  --primary-color: #42ffd2;
+  --primary-color: #{$primary-color};
+  --primary-hover-color: #{$primary-hover-color};
+  --secondary-color: #{$secondary-color};
+  --secondary-hover-color: #{$secondary-hover-color};
+  --light-color: #{$light-color};
+  --light-hover-color: #{$light-hover-color};
 }
