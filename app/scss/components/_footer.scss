@@ -65,10 +65,10 @@
   }
 
   &__link {
-    color: var(--body-color);
+    color: var(--text-color);
 
     &:hover {
-      color: var(--footer-title-color);
+      color: var(--text-hover-color);
     }
   }
 
