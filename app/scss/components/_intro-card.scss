@@ -16,6 +16,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 
+  &:hover .intro-card__img {
+    transform: translateY(-15%);
+  }
+
   &__body {
     display: flex;
     flex-direction: column;
@@ -35,6 +39,7 @@
     align-self: center;
     justify-self: center;
     flex-shrink: 0;
+    transition: 250ms;
   }
 
   &--upcoming {
