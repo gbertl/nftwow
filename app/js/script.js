@@ -36,6 +36,7 @@ const mySwiperConfig = {
       slidesPerView: 4,
     },
   },
+  grabCursor: true,
 };
 
 const swiper = new Swiper('.mySwiper', mySwiperConfig);
