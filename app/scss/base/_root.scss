@@ -1,13 +1,15 @@
+@use 'abstracts/variables';
+
 :root {
   --body-font: 'Inter', sans-serif;
-  --text-color: #{$text-color};
-  --text-hover-color: #{$text-hover-color};
+  --text-color: #{variables.$text-color};
+  --text-hover-color: #{variables.$text-hover-color};
   --title-color: #111111;
   --normal-font-size: 16px;
-  --primary-color: #{$primary-color};
-  --primary-hover-color: #{$primary-hover-color};
-  --secondary-color: #{$secondary-color};
-  --secondary-hover-color: #{$secondary-hover-color};
-  --light-color: #{$light-color};
-  --light-hover-color: #{$light-hover-color};
+  --primary-color: #{variables.$primary-color};
+  --primary-hover-color: #{variables.$primary-hover-color};
+  --secondary-color: #{variables.$secondary-color};
+  --secondary-hover-color: #{variables.$secondary-hover-color};
+  --light-color: #{variables.$light-color};
+  --light-hover-color: #{variables.$light-hover-color};
 }
