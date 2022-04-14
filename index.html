@@ -123,6 +123,7 @@
           <div class="intro-card">
             <div class="intro-card__body">
               <img
+                loading="lazy"
                 src="dist/img/intro/coin.svg"
                 alt="Coin"
                 class="intro-card__icon"
@@ -137,6 +138,7 @@
               </button>
             </div>
             <img
+              loading="lazy"
               src="dist/img/intro/showcase-1.png"
               alt="Showcase 1"
               class="intro-card__img"
@@ -160,6 +162,7 @@
               </button>
             </div>
             <img
+              loading="lazy"
               src="dist/img/intro/showcase-2.png"
               alt="Showcase 1"
               class="intro-card__img"
@@ -193,6 +196,7 @@
               </button>
             </div>
             <img
+              loading="lazy"
               src="dist/img/upcoming/showcase-1.png"
               alt="Showcase 1"
               class="intro-card__img"
@@ -210,6 +214,7 @@
               </button>
             </div>
             <img
+              loading="lazy"
               src="dist/img/upcoming/showcase-2.png"
               alt="Showcase 2"
               class="intro-card__img"
@@ -231,7 +236,10 @@
           <ul class="trend__list">
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
-                ><img src="dist/img/trend/trending/item-1.png" alt="Trending 1"
+                ><img
+                  loading="lazy"
+                  src="dist/img/trend/trending/item-1.png"
+                  alt="Trending 1"
               /></span>
               <h4 class="trend__item-heading">#1 - Roundiiies</h4>
               <span class="trend__percent trend__percent--high">+1,095.3%</span>
@@ -249,7 +257,10 @@
             </li>
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
-                ><img src="dist/img/trend/trending/item-2.png" alt="Trending 2"
+                ><img
+                  loading="lazy"
+                  src="dist/img/trend/trending/item-2.png"
+                  alt="Trending 2"
               /></span>
               <h4 class="trend__item-heading">#2- Flewid</h4>
               <span class="trend__percent trend__percent--low">-5.3%</span>
@@ -267,7 +278,10 @@
             </li>
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
-                ><img src="dist/img/trend/trending/item-3.png" alt="Trending 3"
+                ><img
+                  loading="lazy"
+                  src="dist/img/trend/trending/item-3.png"
+                  alt="Trending 3"
               /></span>
               <h4 class="trend__item-heading">#3 - Angel of Moon</h4>
               <span class="trend__percent trend__percent--high">+19.6%</span>
@@ -285,7 +299,10 @@
             </li>
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
-                ><img src="dist/img/trend/trending/item-4.png" alt="Trending 4"
+                ><img
+                  loading="lazy"
+                  src="dist/img/trend/trending/item-4.png"
+                  alt="Trending 4"
               /></span>
               <h4 class="trend__item-heading">#4 - Goggle Eyes</h4>
               <span class="trend__percent trend__percent--low">-1.9%</span>
@@ -303,7 +320,10 @@
             </li>
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
-                ><img src="dist/img/trend/trending/item-5.png" alt="Trending 5"
+                ><img
+                  loading="lazy"
+                  src="dist/img/trend/trending/item-5.png"
+                  alt="Trending 5"
               /></span>
               <h4 class="trend__item-heading">#5 - Paradize</h4>
               <span class="trend__percent trend__percent--high">+214.8%</span>
@@ -332,6 +352,7 @@
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
                 ><img
+                  loading="lazy"
                   src="dist/img/trend/new-and-noteworthy/item-1.png"
                   alt="New 1"
               /></span>
@@ -354,6 +375,7 @@
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
                 ><img
+                  loading="lazy"
                   src="dist/img/trend/new-and-noteworthy/item-2.png"
                   alt="New 2"
               /></span>
@@ -376,6 +398,7 @@
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
                 ><img
+                  loading="lazy"
                   src="dist/img/trend/new-and-noteworthy/item-3.png"
                   alt="New 3"
               /></span>
@@ -396,6 +419,7 @@
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
                 ><img
+                  loading="lazy"
                   src="dist/img/trend/new-and-noteworthy/item-4.png"
                   alt="New 4"
               /></span>
@@ -416,6 +440,7 @@
             <li class="trend__item">
               <span class="trend__img notif-dot notif-dot--check"
                 ><img
+                  loading="lazy"
                   src="dist/img/trend/new-and-noteworthy/item-5.png"
                   alt="New 5"
               /></span>
@@ -451,7 +476,18 @@
             <div
               class="nft-card swiper-slide nft-card--ending nft-card--ending-1"
             >
-              <img src="dist/img/ending-soon/showcase-1.jpg" alt="Showcase 1" />
+              <picture>
+                <source
+                  srcset="dist/img/ending-soon/showcase-1@4x.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="dist/img/ending-soon/showcase-1@3x.jpg"
+                  alt="Showcase 1"
+                />
+              </picture>
+
               <div class="nft-card__desc">
                 <span>Flowitars</span>
                 <span>Top Bid</span>
@@ -467,7 +503,17 @@
             <div
               class="nft-card swiper-slide nft-card--ending nft-card--ending-2"
             >
-              <img src="dist/img/ending-soon/showcase-2.jpg" alt="Showcase 2" />
+              <picture>
+                <source
+                  srcset="dist/img/ending-soon/showcase-2@4x.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="dist/img/ending-soon/showcase-2@3x.jpg"
+                  alt="Showcase 2"
+                />
+              </picture>
               <div class="nft-card__desc">
                 <span>Anna Kuife</span>
                 <span>Top Bid</span>
@@ -483,7 +529,17 @@
             <div
               class="nft-card swiper-slide nft-card--ending nft-card--ending-3"
             >
-              <img src="dist/img/ending-soon/showcase-3.jpg" alt="Showcase 3" />
+              <picture>
+                <source
+                  srcset="dist/img/ending-soon/showcase-3@4x.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="dist/img/ending-soon/showcase-3@3x.jpg"
+                  alt="Showcase 3"
+                />
+              </picture>
               <div class="nft-card__desc">
                 <span>Musikc</span>
                 <span>Top Bid</span>
@@ -499,7 +555,17 @@
             <div
               class="nft-card swiper-slide nft-card--ending nft-card--ending-4"
             >
-              <img src="dist/img/ending-soon/showcase-4.jpg" alt="Showcase 4" />
+              <picture>
+                <source
+                  srcset="dist/img/ending-soon/showcase-4@4x.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="dist/img/ending-soon/showcase-4@3x.jpg"
+                  alt="Showcase 4"
+                />
+              </picture>
               <div class="nft-card__desc">
                 <span>BLOODFLOW</span>
                 <span>Top Bid</span>
@@ -539,6 +605,7 @@
               <button class="btn btn--outline intro-card__button">Live</button>
             </div>
             <img
+              loading="lazy"
               src="dist/img/collections/showcase-1.png"
               alt="Showcase 1"
               class="intro-card__img"
@@ -554,6 +621,7 @@
               <button class="btn btn--outline intro-card__button">Live</button>
             </div>
             <img
+              loading="lazy"
               src="dist/img/collections/showcase-2.png"
               alt="Showcase 2"
               class="intro-card__img"
@@ -569,6 +637,7 @@
               <button class="btn btn--outline intro-card__button">Live</button>
             </div>
             <img
+              loading="lazy"
               src="dist/img/collections/showcase-3.png"
               alt="Showcase 3"
               class="intro-card__img"
@@ -584,6 +653,7 @@
               <button class="btn btn--outline intro-card__button">Live</button>
             </div>
             <img
+              loading="lazy"
               src="dist/img/collections/showcase-4.png"
               alt="Showcase 4"
               class="intro-card__img"
@@ -606,7 +676,17 @@
             <div
               class="nft-card swiper-slide nft-card--learn nft-card--learn-1"
             >
-              <img src="dist/img/learn/showcase-1.png" alt="Showcase 1" />
+              <picture>
+                <source
+                  srcset="dist/img/learn/showcase-1@4x.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="dist/img/learn/showcase-1@3x.jpg"
+                  alt="Showcase 1"
+                />
+              </picture>
               <div class="nft-card__desc">
                 <span>Learn</span>
                 <span
@@ -618,7 +698,17 @@
             <div
               class="nft-card swiper-slide nft-card--learn nft-card--learn-2"
             >
-              <img src="dist/img/learn/showcase-2.png" alt="Showcase 2" />
+              <picture>
+                <source
+                  srcset="dist/img/learn/showcase-2@4x.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="dist/img/learn/showcase-2@3x.jpg"
+                  alt="Showcase 2"
+                />
+              </picture>
               <div class="nft-card__desc">
                 <span>Learn</span>
                 <span>Learn how to top up your wallet on NFTwow.</span>
@@ -627,7 +717,17 @@
             <div
               class="nft-card swiper-slide nft-card--learn nft-card--learn-3"
             >
-              <img src="dist/img/learn/showcase-3.png" alt="Showcase 3" />
+              <picture>
+                <source
+                  srcset="dist/img/learn/showcase-3@4x.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="dist/img/learn/showcase-3@3x.jpg"
+                  alt="Showcase 3"
+                />
+              </picture>
               <div class="nft-card__desc">
                 <span>Learn</span>
                 <span
@@ -639,7 +739,17 @@
             <div
               class="nft-card swiper-slide nft-card--learn nft-card--learn-4"
             >
-              <img src="dist/img/learn/showcase-4.png" alt="Showcase 4" />
+              <picture>
+                <source
+                  srcset="dist/img/learn/showcase-4@4x.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="dist/img/learn/showcase-4@3x.jpg"
+                  alt="Showcase 4"
+                />
+              </picture>
               <div class="nft-card__desc">
                 <span>Learn</span>
                 <span
