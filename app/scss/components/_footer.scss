@@ -94,21 +94,4 @@
       color: var(--footer-title-color);
     }
   }
-
-  &__made {
-    color: var(--footer-title-color);
-
-    a {
-      color: inherit;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    i {
-      color: rgba(143, 1, 0);
-    }
-  }
 }
