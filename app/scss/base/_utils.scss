@@ -131,6 +131,10 @@
 .no-scroll {
   overflow: hidden;
   height: 100vh;
+
+  @include mq(sm) {
+    padding-right: 15px;
+  }
 }
 
 .swiper {
